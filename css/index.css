@@ -65,6 +65,7 @@
   border-radius: 3px;
   border-image: none;
   border-width: 0px;
+  cursor: pointer;
 }
 #menu-bar {
   position: fixed;
@@ -86,7 +87,7 @@
   cursor: pointer;
 }
 .menu-button:hover {
-  color: #ffd691;
+  color: #CFBC78;
 }
 .menu {
   display: none;
@@ -114,7 +115,7 @@
   text-decoration: none;
 }
 .menu ul li a:hover {
-  color: #ffd691;
+  color: #CFBC78;
 }
 .menu--open {
   display: block;
