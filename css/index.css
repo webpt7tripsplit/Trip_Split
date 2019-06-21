@@ -21,6 +21,9 @@
   flex-direction: column;
   background-color: rgba(42, 48, 51, 0.7);
 }
+.landing .title-block .title {
+  font-family: 'Yellowtail';
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
