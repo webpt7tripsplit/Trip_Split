@@ -41,7 +41,7 @@
   text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .landing .title-block p {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   font-family: Open Sans;
   font-style: normal;
@@ -57,7 +57,7 @@
   height: 70px;
   color: #FFFCF7;
   background-color: #CFBC78;
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
