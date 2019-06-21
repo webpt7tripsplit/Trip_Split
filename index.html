@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="./css/index.css" />
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Trip Split - Home</title>
 </head>
 
 <body>
-  <nav>
+  <nav id="menu-bar">
     <h2>Trip Split</h2>
-    <h2>Menu</h2>
-    <!-- Icon to click on goes here -->
+    <div>
+      <h2>Menu</h2>
+      <i class="fas fa-bars menu-button" ></i>
+    </div>
   </nav>
-  <div id="modal">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#features">Features</a>
-      <a href="about.html">About Us</a>
-      <a href="#sign-up">Sign Up</a>
-    </nav>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="sign-up.html">Sign Up</a></li>
+    </ul>
   </div>
 
   <div class="main-container">
@@ -124,5 +126,7 @@
       <p>&copy;Trip Split 2019</p>
     </footer>
   </div>
+
+  <script src="./components/menu/Menu.js"></script>
 </body>
 </html>
