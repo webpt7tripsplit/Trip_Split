@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(42, 48, 51, 0.7);
-  margin-top: 50px;
+  margin-top: 160px;
 }
 .landing .title-block h1 {
   width: 300px;
@@ -71,7 +71,7 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: #2A3033;
+  background-color: rgba(42, 48, 51, 0.85);
   color: #FFFCF7;
 }
 #menu-bar h2 {
@@ -97,7 +97,7 @@
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #738290;
-  border: 1px solid #2A3033;
+  border: 1px solid rgba(42, 48, 51, 0.85);
   border-left: none;
   border-bottom: none;
   z-index: 2;
