@@ -22,29 +22,37 @@
   background-color: rgba(42, 48, 51, 0.7);
 }
 #menu-bar {
+  position: fixed;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  background-color: #2A3033;
+  color: #FFFCF7;
 }
 #menu-bar h2 {
   display: inline-block;
+  margin-left: 20px;
 }
 #menu-bar div {
   display: inline-block;
+  margin-right: 40px;
 }
 .menu-button {
   cursor: pointer;
 }
+.menu-button:hover {
+  color: #ffd691;
+}
 .menu {
   display: none;
   position: fixed;
-  top: 75px;
+  top: 66px;
   right: 0;
   width: 350px;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: #81C784;
-  border: 1px solid #004D40;
+  background-color: #738290;
+  border: 1px solid #2A3033;
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -54,7 +62,14 @@
   list-style-type: none;
   font-size: 32px;
   padding: 30px 0;
-  text-align: center;
+  text-align: left;
+}
+.menu ul li a {
+  color: #FFFCF7;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  color: #ffd691;
 }
 .menu--open {
   display: block;
