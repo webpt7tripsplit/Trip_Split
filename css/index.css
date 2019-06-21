@@ -11,15 +11,46 @@
 }
 .landing {
   display: flex;
+  flex-direction: column;
   width: 100%;
   Height: 900px;
   align-items: center;
   justify-content: center;
 }
 .landing .title-block {
+  width: 400px;
+  height: 460px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(42, 48, 51, 0.7);
+  align-items: center;
+  background-color: rgba(42, 48, 51, 0.85);
+}
+.landing .title-block h1 {
+  width: 300px;
+  height: 140px;
+  margin-top: 35px;
+  padding-left: 12px;
+  padding-top: 12px;
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  align-items: center;
+  border-top: 2px solid #FFFCF7;
+  border-bottom: 2px solid #FFFCF7;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.landing .title-block p {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 #menu-bar {
   display: flex;
