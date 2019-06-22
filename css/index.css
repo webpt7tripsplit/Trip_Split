@@ -78,6 +78,7 @@
 #menu-bar h2 {
   display: inline-block;
   margin-left: 20px;
+  margin-right: 20px;
 }
 #menu-bar div {
   display: inline-block;
@@ -104,11 +105,15 @@
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+.menu ul {
+  padding-right: 40px;
+}
 .menu ul li {
   list-style-type: none;
   font-size: 32px;
   padding: 30px 0;
   text-align: left;
+  border-bottom: 1px solid #454f58;
 }
 .menu ul li a {
   color: #FFFCF7;
@@ -116,6 +121,9 @@
 }
 .menu ul li a:hover {
   color: #CFBC78;
+}
+.menu ul li:last-of-type {
+  border: none;
 }
 .menu--open {
   display: block;
