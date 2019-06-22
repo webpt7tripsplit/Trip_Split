@@ -41,7 +41,6 @@ header .feature-header {
 
 #features {
     width         : 100%;
-    // height        : 900px;
     display       : flex;
     flex-direction: column;
 
@@ -64,10 +63,19 @@ header .feature-header {
             background-color: @fadedBlack;
             flex-grow       : 2;
             padding         : 50px 50px 100px;
+
+            p {
+                padding-right: 20%;
+            }
         }
     }
 
     #even {
         flex-direction: row-reverse;
+        
+        h3, p {
+            padding-left: 20%;
+            padding-right: 50px;
+        }
     }
 }

@@ -124,8 +124,16 @@ header .feature-header .icons img {
   flex-grow: 2;
   padding: 50px 50px 100px;
 }
+#features .feature-container .inner-feature-container p {
+  padding-right: 20%;
+}
 #features #even {
   flex-direction: row-reverse;
+}
+#features #even h3,
+#features #even p {
+  padding-left: 20%;
+  padding-right: 50px;
 }
 #menu-bar {
   position: fixed;
