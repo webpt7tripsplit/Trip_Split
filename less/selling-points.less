@@ -1,11 +1,60 @@
 .selling-points {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width           : 100%;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
     background-color: @sellPoint;
 
     .sell-header {
+        max-width     : 800px;
+        display       : flex;
+        flex-direction: column;
+        margin-top    : 90px;
 
+        h2 {
+            text-align    : center;
+            border-bottom : 1px solid #647783;
+            padding-bottom: 40px;
+            margin        : 0 auto;
+        }
+
+        p {
+            text-align: center;
+            margin    : 10px 0 60px 0;
+        }
+    }
+
+    .cellgroup-container {
+        width        : 800px;
+        display      : flex;
+        flex-wrap    : wrap;
+        margin-bottom: 120px;
+        align-items  : center;
+    }
+
+    .cell {
+        width           : 400px;
+        height          : 200px;
+        display         : flex;
+        background-color: darken(@sellPoint, 2%);
+
+
+
+        .icon-cell {
+            width          : 40%;
+            display        : flex;
+            justify-content: space-around;
+
+            img {
+                width           : 24px;
+                height          : 24px;
+                background-color: grey;
+                margin-top      : 42px;
+            }
+        }
+
+        h3 {
+            margin: 40px 20px 20px 0;
+        }
     }
 }

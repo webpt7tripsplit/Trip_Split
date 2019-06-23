@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(42, 48, 51, 0.7);
+  background-color: rgba(34, 36, 37, 0.7);
   margin-top: 160px;
 }
 .landing .title-block h1 {
@@ -120,7 +120,7 @@ header .feature-header .icons img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(42, 48, 51, 0.85);
+  background-color: rgba(34, 36, 37, 0.85);
   flex-grow: 2;
   padding: 50px 50px 100px;
 }
@@ -140,7 +140,7 @@ header .feature-header .icons img {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(42, 48, 51, 0.85);
+  background-color: rgba(34, 36, 37, 0.85);
   color: #FFFCF7;
 }
 #menu-bar h2 {
@@ -167,7 +167,7 @@ header .feature-header .icons img {
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #738290;
-  border: 1px solid rgba(42, 48, 51, 0.85);
+  border: 1px solid rgba(34, 36, 37, 0.85);
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -202,6 +202,49 @@ header .feature-header .icons img {
   flex-direction: column;
   align-items: center;
   background-color: #8CA2B0;
+}
+.selling-points .sell-header {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.selling-points .sell-header h2 {
+  text-align: center;
+  border-bottom: 1px solid #647783;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.selling-points .sell-header p {
+  text-align: center;
+  margin: 10px 0 60px 0;
+}
+.selling-points .cellgroup-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  align-items: center;
+}
+.selling-points .cell {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  background-color: #869dac;
+}
+.selling-points .cell .icon-cell {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.selling-points .cell .icon-cell img {
+  width: 24px;
+  height: 24px;
+  background-color: grey;
+  margin-top: 42px;
+}
+.selling-points .cell h3 {
+  margin: 40px 20px 20px 0;
 }
 @font-face {
   font-family: 'Open Sans';
