@@ -247,6 +247,47 @@ header .feature-header .icons img {
 .selling-points .cell h3 {
   margin: 40px 20px 20px 0;
 }
+.final-cta {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 0 40px 0;
+}
+.final-cta .fcta-inner-container {
+  width: 800px;
+  display: flex;
+}
+.final-cta .fcta-inner-container .fcta-text-container {
+  padding-right: 20px;
+}
+.final-cta .fcta-inner-container .fcta-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+}
+.final-cta .fcta-inner-container .fcta-button-container #fcta-sign-up {
+  width: 180px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: #CFBC78;
+  color: #FFFCF7;
+  cursor: pointer;
+  margin: 1em 0;
+}
+.final-cta .fcta-inner-container .fcta-button-container #fcta-learn-more {
+  width: 180px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #FFFCF7;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFCF7;
+  cursor: pointer;
+  margin: 1em 0;
+}
 #form-page {
   background-color: #CFBC78;
 }
@@ -296,6 +337,27 @@ header .feature-header .icons img {
 }
 form div p {
   margin-bottom: 0;
+}
+#home-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#home-footer .footer-icons {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+#home-footer .footer-icons img {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+}
+#home-footer p {
+  margin: 0 0 50px 0;
 }
 @font-face {
   font-family: 'Open Sans';
