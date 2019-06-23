@@ -1,0 +1,50 @@
+.final-cta {
+    width           : 100%;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    background-color: fade(@transBlack, 50%);
+    padding         : 40px 0 40px 0;
+
+    .fcta-inner-container {
+        width:800px;
+        display: flex;
+
+
+        .fcta-text-container {
+            padding-right: 20px;
+
+        }
+
+        .fcta-button-container {
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+
+            #fcta-sign-up {
+                width           : 180px;
+                height          : 40px;
+                border-radius   : 3px;
+                border          : none;
+                background-color: #CFBC78;
+                color           : @textColor;
+                ;
+                cursor: pointer;
+                margin: 1em 0;
+            }
+
+            #fcta-learn-more {
+                width           : 180px;
+                height          : 40px;
+                border-radius   : 3px;
+                border          : 1px solid @textColor;
+                background-color: fade(black, 0%);
+                color           : @textColor;
+                ;
+                cursor: pointer;
+                margin: 1em 0;
+            }
+        }
+    }
+}
