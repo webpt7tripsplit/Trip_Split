@@ -23,6 +23,7 @@
   align-items: center;
   background-color: rgba(34, 36, 37, 0.7);
   margin-top: 160px;
+  border-radius: 10px;
 }
 .landing .title-block h1 {
   width: 300px;
@@ -61,7 +62,7 @@
   font-weight: bold;
   font-size: 36px;
   margin-top: 50px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-image: none;
   border-width: 0px;
   cursor: pointer;
@@ -87,7 +88,7 @@ header .feature-header p {
   width: 600px;
   font-size: 18px;
   text-align: center;
-  margin-block-end: 2em;
+  margin-bottom: 30px;
 }
 header .feature-header .icons {
   width: 400px;
