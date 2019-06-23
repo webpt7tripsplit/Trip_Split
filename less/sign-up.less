@@ -1,0 +1,59 @@
+#form-page {
+  background-color: @featureHeader;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  height: 100vh;
+
+  .form-div {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 45%;
+    padding: 30px;
+    background-color: white;
+  }
+}
+
+.register-container, .login-container {
+  h1 {
+    margin-top: 0;
+  }
+
+  input {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.loginbtn, .registerbtn {
+  margin-top: 20px;
+  width: 173px;
+  padding: 20px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #CFBC78;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form {
+  div {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
