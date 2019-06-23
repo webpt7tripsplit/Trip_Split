@@ -199,8 +199,9 @@ header .feature-header .icons img {
 .selling-points {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #8CA2B0;
-  color: black;
 }
 @font-face {
   font-family: 'Open Sans';
