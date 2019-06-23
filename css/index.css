@@ -226,6 +226,8 @@ header .feature-header .icons img {
   flex-wrap: wrap;
   margin-bottom: 120px;
   align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .selling-points .cell {
   width: 400px;
@@ -271,7 +273,7 @@ header .feature-header .icons img {
 .final-cta .fcta-inner-container .fcta-button-container #fcta-sign-up {
   width: 180px;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: none;
   background-color: #CFBC78;
   color: #FFFCF7;
@@ -281,7 +283,7 @@ header .feature-header .icons img {
 .final-cta .fcta-inner-container .fcta-button-container #fcta-learn-more {
   width: 180px;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid #FFFCF7;
   background-color: rgba(0, 0, 0, 0);
   color: #FFFCF7;
