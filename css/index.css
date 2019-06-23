@@ -1,7 +1,6 @@
 .main-container {
   background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   width: 100%;
-  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,8 +21,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(42, 48, 51, 0.7);
+  background-color: rgba(34, 36, 37, 0.7);
   margin-top: 160px;
+  border-radius: 10px;
 }
 .landing .title-block h1 {
   width: 300px;
@@ -62,7 +62,7 @@
   font-weight: bold;
   font-size: 36px;
   margin-top: 50px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-image: none;
   border-width: 0px;
   cursor: pointer;
@@ -88,7 +88,7 @@ header .feature-header p {
   width: 600px;
   font-size: 18px;
   text-align: center;
-  margin-block-end: 2em;
+  margin-bottom: 30px;
 }
 header .feature-header .icons {
   width: 400px;
@@ -103,7 +103,6 @@ header .feature-header .icons img {
 }
 #features {
   width: 100%;
-  height: 900px;
   display: flex;
   flex-direction: column;
 }
@@ -122,19 +121,27 @@ header .feature-header .icons img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(42, 48, 51, 0.85);
+  background-color: rgba(34, 36, 37, 0.85);
   flex-grow: 2;
   padding: 50px 50px 100px;
 }
+#features .feature-container .inner-feature-container p {
+  padding-right: 20%;
+}
 #features #even {
   flex-direction: row-reverse;
+}
+#features #even h3,
+#features #even p {
+  padding-left: 20%;
+  padding-right: 50px;
 }
 #menu-bar {
   position: fixed;
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(42, 48, 51, 0.85);
+  background-color: rgba(34, 36, 37, 0.85);
   color: #FFFCF7;
 }
 #menu-bar h2 {
@@ -161,7 +168,7 @@ header .feature-header .icons img {
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #738290;
-  border: 1px solid rgba(42, 48, 51, 0.85);
+  border: 1px solid rgba(34, 36, 37, 0.85);
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -189,6 +196,56 @@ header .feature-header .icons img {
 }
 .menu--open {
   display: block;
+}
+.selling-points {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8CA2B0;
+}
+.selling-points .sell-header {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.selling-points .sell-header h2 {
+  text-align: center;
+  border-bottom: 1px solid #647783;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.selling-points .sell-header p {
+  text-align: center;
+  margin: 10px 0 60px 0;
+}
+.selling-points .cellgroup-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  align-items: center;
+}
+.selling-points .cell {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  background-color: #869dac;
+}
+.selling-points .cell .icon-cell {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.selling-points .cell .icon-cell img {
+  width: 24px;
+  height: 24px;
+  background-color: grey;
+  margin-top: 42px;
+}
+.selling-points .cell h3 {
+  margin: 40px 20px 20px 0;
 }
 #form-page {
   background-color: #CFBC78;
