@@ -12,8 +12,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  Height: 900px;
+  Height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 .landing .title-block {
   width: 400px;
@@ -22,7 +23,6 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(34, 36, 37, 0.7);
-  margin-top: 160px;
   border-radius: 10px;
 }
 .landing .title-block h1 {
@@ -361,6 +361,20 @@ form div p {
 #home-footer p {
   margin: 0 0 50px 0;
   color: #FFFCF7;
+}
+.team-container {
+  background-image: url(https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans';
+  color: #FFFCF7;
+}
+.billboard-container {
+  width: 100%;
+  height: 30vh;
 }
 @font-face {
   font-family: 'Open Sans';
