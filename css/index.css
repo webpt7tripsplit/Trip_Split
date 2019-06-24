@@ -1,5 +1,6 @@
 .main-container {
-  background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-color: darkgrey;
+  background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -396,8 +397,9 @@ form div p {
   color: #FFFCF7;
 }
 .team-container {
-  background-image: url(https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-image: url(https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg);
   width: 100%;
+  background-color: darkgrey;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -428,7 +430,6 @@ form div p {
 .team-member .pic-container img {
   width: 270px;
   height: 360px;
-  border-radius: 10px;
 }
 .team-member .pic-container h3 {
   margin-bottom: 60px;
@@ -438,6 +439,63 @@ form div p {
   flex-direction: column;
   padding: 0 80px;
   align-content: space-between;
+}
+.features-container {
+  background-image: url(https://images.pexels.com/photos/2096700/pexels-photo-2096700.jpeg);
+  width: 100%;
+  background-color: darkgrey;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans';
+  color: #FFFCF7;
+}
+.features-container .billboard-container {
+  width: 100%;
+  height: 40vh;
+}
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8CA2B0;
+  padding-bottom: 80px;
+}
+.content-container .features-header {
+  width: 60%;
+  text-align: center;
+  margin: 80px 0;
+}
+.content-container img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+}
+.content-container .features-outer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 20px;
+}
+.content-container .features-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.content-container .features-content .features-title {
+  display: flex;
+}
+.content-container .features-content .features-title img {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  margin: 15px 20px 0 0;
+}
+.content-container .even {
+  flex-direction: row-reverse;
 }
 @font-face {
   font-family: 'Open Sans';
