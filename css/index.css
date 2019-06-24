@@ -428,6 +428,7 @@ form div p {
 .team-member .pic-container img {
   width: 270px;
   height: 360px;
+  border-radius: 10px;
 }
 .team-member .pic-container h3 {
   margin-bottom: 60px;
