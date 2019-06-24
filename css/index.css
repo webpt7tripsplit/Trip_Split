@@ -149,6 +149,11 @@ header .feature-header .icons img {
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (max-width: 499px) {
+  #menu-bar h2 {
+    margin-right: 0px;
+  }
+}
 #menu-bar div {
   display: inline-block;
   margin-right: 40px;
@@ -173,6 +178,11 @@ header .feature-header .icons img {
   border-bottom: none;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+@media (max-width: 499px) {
+  .menu {
+    width: 100%;
+  }
 }
 .menu ul {
   padding-right: 40px;
