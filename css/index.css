@@ -300,7 +300,8 @@ header .feature-header .icons img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  padding: 90px 0;
 }
 .form-container .form-div {
   border: 3px solid black;
@@ -308,6 +309,28 @@ header .feature-header .icons img {
   width: 45%;
   padding: 30px;
   background-color: white;
+}
+@media (max-width: 899px) {
+  .form-container .form-div {
+    width: 80%;
+    margin: 66px auto 10px auto;
+  }
+  .form-container .form-div:last-of-type {
+    margin: 0 auto 10px auto;
+  }
+}
+@media (max-width: 499px) {
+  .form-container .form-div {
+    width: 95%;
+  }
+  .form-container .form-div:last-of-type {
+    margin: 0 auto 10px auto;
+  }
+}
+@media (max-width: 899px) {
+  .form-container {
+    padding: 0;
+  }
 }
 .register-container h1,
 .login-container h1 {
