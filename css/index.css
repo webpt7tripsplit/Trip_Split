@@ -440,6 +440,9 @@ form div p {
   padding: 0 80px;
   align-content: space-between;
 }
+.padding-bottom {
+  padding-bottom: 80px;
+}
 .features-container {
   background-image: url(https://images.pexels.com/photos/2096700/pexels-photo-2096700.jpeg);
   width: 100%;
