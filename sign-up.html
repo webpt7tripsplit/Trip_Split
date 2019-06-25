@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,8 @@
   <script src="https://kit.fontawesome.com/a2c7d3d1c4.js"></script>
   <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-  <nav id="menu-bar">
-    <h2>Trip Split</h2>
-    <div>
-      <h2>Menu</h2>
-      <i class="fas fa-bars fa-lg menu-button" ></i>
-    </div>
-  </nav>
   <div class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -25,22 +20,29 @@
     </ul>
   </div>
 
-  <div id="form-page">
+  <div id="sign-up-page">
+    <nav id="menu-bar">
+      <h2>Trip Split</h2>
+      <div>
+        <h2>Menu</h2>
+        <i class="fas fa-bars fa-lg menu-button"></i>
+      </div>
+    </nav>
     <div class="form-container">
       <div class="form-div">
         <form action="">
           <div class="login-container">
             <h1>Login To Your Account</h1>
-                    
+
             <label for="email"><b>Email</b></label><br>
             <input type="text" placeholder="Enter Email" name="email" required><br>
-        
+
             <label for="psw"><b>Password</b></label><br>
             <input type="password" placeholder="Enter Password" name="psw" required><br>
-        
+
             <button type="submit" class="loginbtn">Login</button>
           </div>
-        
+
           <div>
             <p>Forgotten your password? <a href="#">Recover Password</a>.</p>
           </div>
@@ -51,41 +53,43 @@
         <form action="">
           <div class="register-container">
             <h1>Create Your Account</h1>
-            
+
             <label for="firstname"><b>First Name</b></label><br>
             <input type="text" name="firstname" placeholder="Enter First Name"><br>
-  
+
             <label for="lastname"><b>Last Name</b></label><br>
             <input type="text" name="lastname" placeholder="Enter Last Name"><br>
 
             <label for="email"><b>Email</b></label><br>
             <input type="text" placeholder="Enter Email" name="email" required><br>
-        
+
             <label for="psw"><b>Password</b></label><br>
             <input type="password" placeholder="Enter Password" name="psw" required><br>
-        
+
             <label for="psw-repeat"><b>Repeat Password</b></label><br>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
-        
+
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
             <button type="submit" class="registerbtn">Register</button>
           </div>
         </form>
       </div>
     </div>
+    <footer id="home-footer">
+      <div class="footer-icons">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+      <p>&copy;Trip Split 2019</p>
+    </footer>
   </div>
 
-  <footer id="home-footer">
-    <div class="footer-icons">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div>
-    <p>&copy;Trip Split 2019</p>
-  </footer>
-  
+
+
   <script src="./components/menu/Menu.js"></script>
 </body>
+
 </html>
