@@ -314,6 +314,11 @@ header .feature-header .icons img {
   background-size: cover;
   font-family: 'Open Sans';
 }
+@media (max-width: 799px) {
+  #sign-up-page {
+    height: 150%;
+  }
+}
 .form-container {
   max-width: 900px;
   height: 100%;
