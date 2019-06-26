@@ -7,12 +7,23 @@
     padding         : 40px 0 40px 0;
 
     .fcta-inner-container {
-        width:800px;
-        display: flex;
+        width          : 90%;
+        max-width      : 1024px;
+        display        : flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            flex-direction: column;
+            align-items   : center;
+        }
 
 
         .fcta-text-container {
             padding-right: 20px;
+
+            @media @mobile {
+                text-align: center;
+            }
 
         }
 
@@ -20,7 +31,7 @@
             display        : flex;
             flex-direction : column;
             justify-content: space-evenly;
-            padding: 0px 20px;
+            padding        : 0px 20px;
 
             #fcta-sign-up {
                 width           : 180px;

@@ -1,10 +1,14 @@
 .landing {
-    display           : flex;
-    flex-direction    : column;
-    width             : 100%;
-    Height            : 100vh;
-    align-items       : center;
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
+    Height         : 100vh;
+    align-items    : center;
     justify-content: center;
+
+    @media @mobile {
+        height: auto;
+    }
 
     .title-block {
         width           : 400px;
@@ -14,6 +18,13 @@
         align-items     : center;
         background-color: fade(@fadedBlack, 70%);
         border-radius   : 10px;
+
+        @media @mobile {
+            width        : 100%;
+            max-width    : 400px;
+            border-radius: 0;
+            margin-top   : 127.81px;
+        }
 
         h1 {
             width        : 300px;
@@ -59,5 +70,16 @@
         border-image    : none;
         border-width    : 0px;
         cursor          : pointer;
+
+        @media @mobile {
+            width        : 100%;
+            height       : 70px;
+            font-size    : 1.8rem;
+            border-radius: 0;
+            border-top   : 1px solid @textColor;
+            border-bottom: 1px solid @textColor;
+            margin       : 0;
+
+        }
     }
 }
