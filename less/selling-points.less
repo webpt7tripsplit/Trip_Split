@@ -6,6 +6,7 @@
     background-color: @sellPoint;
 
     .sell-header {
+        width         : 95%;
         max-width     : 800px;
         display       : flex;
         flex-direction: column;
@@ -21,21 +22,27 @@
         p {
             text-align: center;
             margin    : 10px 0 60px 0;
+
+            @media @tablet {
+                width: 90%;
+            }
         }
     }
 
     .cellgroup-container {
-        width        : 800px;
-        display      : flex;
-        flex-wrap    : wrap;
-        margin-bottom: 120px;
-        align-items  : center;
-        border-radius: 10px;
-        overflow: hidden;
+        width          : 90%;
+        max-width      : 750px;
+        display        : flex;
+        flex-wrap      : wrap;
+        margin-bottom  : 120px;
+        align-items    : center;
+        justify-content: center;
+        border-radius  : 10px;
+        overflow       : hidden;
     }
 
     .cell {
-        width           : 400px;
+        width           : 325px;
         height          : 200px;
         display         : flex;
         background-color: darken(@sellPoint, 2%);
