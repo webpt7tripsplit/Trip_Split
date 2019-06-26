@@ -501,20 +501,47 @@ form div p {
   text-align: center;
   margin: 80px 0;
 }
+@media (max-width: 899px) {
+  .content-container .features-header {
+    width: 80%;
+  }
+}
 .content-container img {
-  width: 300px;
   height: 180px;
+  width: 50%;
   object-fit: cover;
 }
 .content-container .features-outer {
-  width: 60%;
+  width: 80%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   align-content: center;
   margin-bottom: 20px;
 }
+@media (max-width: 899px) {
+  .content-container .features-outer {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .content-container .features-outer img {
+    display: block;
+    width: 60%;
+  }
+  .content-container .features-outer .features-content {
+    width: 60%;
+  }
+}
+@media (max-width: 899px) {
+  .content-container .features-outer img {
+    width: 100%;
+  }
+  .content-container .features-outer .features-content {
+    width: 100%;
+  }
+}
 .content-container .features-content {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
