@@ -19,6 +19,10 @@ header .feature-header {
         border-bottom : 1px solid rgb(172, 157, 100);
         padding-bottom: 30px;
         text-align    : center;
+
+        @media @mobile {
+            width: 90%;
+        }
     }
 
     p {
@@ -86,6 +90,10 @@ header .feature-header {
 
             @media @tablet {
                 width: 300px;
+
+                &:first-of-type {
+                    margin-top: 40px;
+                }
             }
         }
 
@@ -98,7 +106,9 @@ header .feature-header {
             padding        : 50px 50px 100px;
 
             @media @tablet {
+                width: 300px;
                 align-items: center;
+                padding: 20px 20px 50px;
             }
 
             p {
@@ -106,6 +116,7 @@ header .feature-header {
 
                 @media @tablet {
                     padding: 0;
+                    text-align: center;
                 }
             }
         }
