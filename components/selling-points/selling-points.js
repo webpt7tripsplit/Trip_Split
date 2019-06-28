@@ -21,7 +21,6 @@ function setbackgroundColor() {
     sellContainers.forEach((el, i) => {
 
         el.style.backgroundColor = darkenColor(outerBgColor, (i+1)*2)
-        console.log(el.style.backgroundColor)
     })
 }
 
