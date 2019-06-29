@@ -1,3 +1,6 @@
+
+
+
 const sellContainers = document.querySelectorAll('.cell');
 
 const outerContainer = document.querySelector('.selling-points');
