@@ -482,6 +482,14 @@ body {
   font-weight: normal;
   text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
+#menu-bar .title a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFCF7;
+}
+#menu-bar .title a:hover {
+  color: #CFBC78;
+}
 #menu-bar div {
   display: inline-block;
   margin-right: 40px;
