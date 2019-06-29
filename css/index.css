@@ -464,6 +464,7 @@ body {
   justify-content: space-between;
   background-color: rgba(34, 36, 37, 0.85);
   color: #FFFCF7;
+  font-family: 'Open Sans';
 }
 #menu-bar h2 {
   display: inline-block;
@@ -474,6 +475,12 @@ body {
   #menu-bar h2 {
     margin-right: 0px;
   }
+}
+#menu-bar .title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #menu-bar div {
   display: inline-block;
@@ -488,7 +495,6 @@ body {
 .menu {
   display: none;
   position: fixed;
-  top: 66px;
   right: 0;
   width: 350px;
   height: 100vh;
@@ -499,14 +505,24 @@ body {
   border-bottom: none;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
+  flex-direction: column;
 }
 @media (max-width: 499px) {
   .menu {
     width: 100%;
   }
 }
+.menu i {
+  font-size: 30px;
+  justify-self: end;
+  padding-left: 280px;
+  padding-top: 25px;
+  color: #FFFCF7;
+}
 .menu ul {
   padding-right: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .menu ul li {
   list-style-type: none;
@@ -514,10 +530,12 @@ body {
   padding: 30px 0;
   text-align: left;
   border-bottom: 1px solid #454f58;
+  justify-self: flex-start;
 }
 .menu ul li a {
   color: #FFFCF7;
   text-decoration: none;
+  font-family: 'Open Sans';
 }
 .menu ul li a:hover {
   color: #CFBC78;
@@ -526,7 +544,7 @@ body {
   border: none;
 }
 .menu--open {
-  display: block;
+  display: flex;
 }
 .selling-points {
   width: 100%;
@@ -580,7 +598,12 @@ body {
   display: flex;
   justify-content: center;
   flex-grow: 2;
-  padding-bottom: 26%;
+  padding-bottom: 30%;
+}
+@media (max-width: 499px) {
+  .selling-points .cell .icon-cell {
+    padding-bottom: 33%;
+  }
 }
 .selling-points .cell .text-cell {
   display: flex;
