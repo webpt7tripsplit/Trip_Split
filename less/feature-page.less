@@ -24,7 +24,7 @@
     flex-direction  : column;
     align-items     : center;
     background-color: @sellPoint;
-    padding-bottom: 80px;
+    padding-bottom  : 80px;
 
     .features-header {
         width     : 60%;
@@ -37,26 +37,26 @@
     }
 
     img {
-        height:180px;
-        width: 50%;
+        height    : 180px;
+        width     : 50%;
         object-fit: cover;
     }
 
     .features-outer {
-        width: 80%;
-        max-width: 1000px;
-        display: flex;
+        width          : 80%;
+        max-width      : 1000px;
+        display        : flex;
         justify-content: space-around;
-        align-content: center;
-        margin-bottom: 20px;
+        align-content  : center;
+        margin-bottom  : 20px;
 
         @media @tablet {
-            width: 80%;
+            width    : 80%;
             flex-wrap: wrap;
 
             img {
                 display: block;
-                width: 60%;
+                width  : 60%;
             }
 
             .features-content {
@@ -76,24 +76,35 @@
     }
 
     .features-content {
-        width: 40%;
-        display: flex;
+        width         : 40%;
+        display       : flex;
         flex-direction: column;
 
         .features-title {
             display: flex;
 
             img {
-                width: 40px;
-                height: 40px;
-                background-color: grey;;
-                margin:15px 20px 0 0;
+                width           : 40px;
+                height          : 40px;
+                background-color: grey;
+                ;
+                margin: 15px 20px 0 0;
             }
         }
-        
+
     }
 
     .even {
         flex-direction: row-reverse;
     }
+}
+
+.background-blur {
+    -webkit-filter       : blur(5px);
+    -moz-filter          : blur(5px);
+    -o-filter            : blur(5px);
+    -ms-filter           : blur(5px);
+    filter               : blur(5px);
+    background-color     : @fadedBlack;
+    background-blend-mode: multiply;
 }
