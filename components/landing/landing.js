@@ -1,14 +1,33 @@
 const stickyNav = document.querySelector('#menu-bar');
-const menuIcon = document.querySelector('i');
-
-// stickyNav.style.display = 'none';
-// menuIcon.style.display = 'inline-block';
 
 const landing = document.querySelector('.landing');
 
+if (document.querySelector('title').innerText.includes('Home')) {
+    stickyNav.style.display = 'none';
+
+    window.addEventListener('scroll', () => {
+        if (landing.scrollHeight - window.scrollY <= 74) {
+            stickyNav.style.display = "flex";
+        } else {
+            stickyNav.style.display = 'none';
+        }
+    })
+}
+
+// const menuIcon = document.querySelector('i');
+
+
+// console.log(landing)
+
+// function checkHeight(e) {
+//     console.log(`Scroll position: ${window.scrollY}`);
+// }
+
+// landing.onscroll = checkHeight(landing);
+
 // const landingCompStyle = getComputedStyle(landing);
 
-// const landingHeight = landingCompStyle.offsetHeight;
+// const landingHeight = landing.height;
 
 // console.log(landingHeight);
 
@@ -21,9 +40,3 @@ const landing = document.querySelector('.landing');
 // observer.observe(landing);
 
 // landing.onvisibilitychange = () => {stickyNav.style.display = 'flex'};
-
-landing.addEventListener('onscroll', (event) => {
-    if (event.target.scrollHeight - event.target.scrollTop === 0) {
-        stickyNav.style.display = "flex";
-    }
-})
