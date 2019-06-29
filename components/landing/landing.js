@@ -1,7 +1,7 @@
 const stickyNav = document.querySelector('#menu-bar');
 const menuIcon = document.querySelector('i');
 
-stickyNav.style.display = 'none';
+// stickyNav.style.display = 'none';
 // menuIcon.style.display = 'inline-block';
 
 const landing = document.querySelector('.landing');
