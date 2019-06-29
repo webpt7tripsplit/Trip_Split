@@ -15,10 +15,14 @@ const sellIcons = ['fas fa-globe-americas',
 
 const sellContainers = document.querySelectorAll('.cell');
 
-sellContainers.forEach((cell, i) => {
-    new SellContainer(cell);
-    cell.childNodes[1] = cell.setAttribute('class', sellIcons[i]);
-});
+sellContainers.forEach(cell => new SellContainer(cell));
+
+function addIcons() {
+    const container = document.querySelector('.selling-points');
+    let icons = container.querySelectorAll('.fas');
+    icons.forEach((icon) => icon.setAttribute('aria-hidden', 'true'));
+    icons.forEach((icon, i) => icon.setAttribute('class', sellIcons[i]));
+}
 
 const outerContainer = document.querySelector('.selling-points');
 const compStyle = getComputedStyle(outerContainer);
@@ -45,3 +49,4 @@ function setbackgroundColor() {
 }
 
 setbackgroundColor();
+addIcons();
