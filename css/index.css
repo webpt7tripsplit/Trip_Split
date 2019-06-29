@@ -580,17 +580,24 @@ body {
   display: flex;
   justify-content: center;
   flex-grow: 2;
-  padding-bottom: 25%;
-}
-.selling-points .cell .icon-cell .fas {
-  width: 1em;
+  padding-bottom: 26%;
 }
 .selling-points .cell .text-cell {
+  display: flex;
+  flex-direction: column;
   padding-right: 20px;
   flex-grow: 1;
 }
+@media (max-width: 499px) {
+  .selling-points .cell .text-cell {
+    text-align: center;
+  }
+}
 .selling-points .cell h3 {
   margin: 40px 20px 20px 0;
+}
+.selling-points .cell p {
+  margin: 0 0 2em 0;
 }
 .landing {
   display: flex;
