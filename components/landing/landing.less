@@ -21,7 +21,7 @@
 
         @media @mobile {
 
-            transform: scale(0.6;)
+            transform: scale(0.6; )
         }
 
         h1 {
@@ -54,20 +54,31 @@
         }
     }
 
-    button {
-        width           : 400px;
-        height          : 70px;
-        color           : @textColor;
-        background-color: @featureHeader;
-        font-family     : 'Open Sans';
-        font-style      : normal;
-        font-weight     : bold;
-        font-size       : 36px;
-        margin-top      : 50px;
-        border-radius   : 10px;
-        border-image    : none;
-        border-width    : 0px;
-        cursor          : pointer;
+
+
+    a {
+        color          : @textColor;
+        text-decoration: none;
+
+        button {
+            width           : 400px;
+            height          : 70px;
+            color           : @textColor;
+            background-color: @featureHeader;
+            font-family     : 'Open Sans';
+            font-style      : normal;
+            font-weight     : bold;
+            font-size       : 36px;
+            margin-top      : 50px;
+            border-radius   : 10px;
+            border-image    : none;
+            border-width    : 0px;
+            cursor          : pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
 
         @media @mobile {
             width        : 100%;
