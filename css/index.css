@@ -584,8 +584,6 @@ body {
 }
 .selling-points .cell .icon-cell .fas {
   width: 1em;
-  height: 1em;
-  vertical-align: -0.125em;
 }
 .selling-points .cell .text-cell {
   padding-right: 20px;
