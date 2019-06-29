@@ -1,7 +1,18 @@
+class SellContainer {
+    constructor(element) {
+    this.element = element;
+    this.icon = this.element.querySelector('.fas');
 
+    };
+};
 
-
+const sellIcons =['fas fa-globe-americas', 'fas fa-map-marked-alt', 'fas fa-taxi', 'fas fa-suitcase', 'fas fa-cocktail', 'fas fa-wallet'];
 const sellContainers = document.querySelectorAll('.cell');
+
+sellContainers.forEach((cell, i) => {
+    new SellContainer(cell);
+    cell.icon = cell.setAttribute(sellIcons[i]);
+});
 
 const outerContainer = document.querySelector('.selling-points');
 const compStyle = getComputedStyle(outerContainer);
