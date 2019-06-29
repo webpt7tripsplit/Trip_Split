@@ -735,6 +735,14 @@ body {
   color: #FFFCF7;
   text-decoration: none;
 }
+@media (max-width: 499px) {
+  .landing a {
+    width: 100%;
+  }
+}
+.landing a:hover {
+  transform: scale(1.1);
+}
 .landing a button {
   width: 400px;
   height: 70px;
@@ -750,11 +758,8 @@ body {
   border-width: 0px;
   cursor: pointer;
 }
-.landing a button:hover {
-  transform: scale(1.1);
-}
 @media (max-width: 499px) {
-  .landing a {
+  .landing a button {
     width: 100%;
     height: 70px;
     font-size: 1.6rem;
