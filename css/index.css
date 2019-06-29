@@ -685,6 +685,7 @@ body {
 }
 #home-footer .footer-icons i {
   color: #fff;
+  cursor: pointer;
 }
 #home-footer p {
   margin: 0 0 50px 0;
