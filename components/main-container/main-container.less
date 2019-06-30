@@ -1,5 +1,5 @@
 .main-container {
-    background-color: darkgrey;
+    background-color: @fadedBlack;
     background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg);
     width           : 100%;
 
@@ -11,6 +11,15 @@
 
     font-family: @mainFont;
     color      : @textColor;
+    z-index: 1;
+}
 
-
+.background-blur {
+    -webkit-filter       : blur(5px);
+    -moz-filter          : blur(5px);
+    -o-filter            : blur(5px);
+    -ms-filter           : blur(5px);
+    filter               : blur(5px);
+    background-color     : @fadedBlack;
+    background-blend-mode: multiply;
 }

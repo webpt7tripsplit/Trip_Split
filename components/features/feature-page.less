@@ -24,7 +24,7 @@
     flex-direction  : column;
     align-items     : center;
     background-color: @sellPoint;
-    padding-bottom: 80px;
+    padding-bottom  : 80px;
 
     .features-header {
         width     : 60%;
@@ -36,27 +36,32 @@
         }
     }
 
-    img {
-        height:180px;
-        width: 50%;
-        object-fit: cover;
-    }
-
     .features-outer {
-        width: 80%;
-        max-width: 1000px;
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        margin-bottom: 20px;
+        width          : 80%;
+        max-width      : 1000px;
+        display        : flex;
+        align-content  : center;
+
+        .img {
+            height    : 180px;
+            width     : 40%;
+            object-fit: cover;
+            flex-grow: 2;
+        }
+
+        .features-content {
+            flex-grow: 1;
+            text-align: center;
+            padding: 40px;
+        }
 
         @media @tablet {
-            width: 80%;
+            width    : 80%;
             flex-wrap: wrap;
 
             img {
                 display: block;
-                width: 60%;
+                width  : 60%;
             }
 
             .features-content {
@@ -76,24 +81,37 @@
     }
 
     .features-content {
-        width: 40%;
-        display: flex;
+        width         : 40%;
+        display       : flex;
         flex-direction: column;
 
         .features-title {
             display: flex;
 
-            img {
-                width: 40px;
-                height: 40px;
-                background-color: grey;;
-                margin:15px 20px 0 0;
+            @media @mobile {
+                flex-direction: column;
+            }
+
+            .fas {
+                font-size: 24px;
+                margin: 24px;
+                content: none;
             }
         }
-        
+
     }
 
     .even {
         flex-direction: row-reverse;
     }
+}
+
+.background-blur {
+    -webkit-filter       : blur(5px);
+    -moz-filter          : blur(5px);
+    -o-filter            : blur(5px);
+    -ms-filter           : blur(5px);
+    filter               : blur(5px);
+    background-color     : @fadedBlack;
+    background-blend-mode: multiply;
 }

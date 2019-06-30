@@ -1,0 +1,74 @@
+.final-cta {
+    width           : 100%;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    background-color: fade(@transBlack, 50%);
+    padding         : 40px 0 40px 0;
+
+    .fcta-inner-container {
+        width          : 90%;
+        max-width      : 1024px;
+        display        : flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            flex-direction: column;
+            align-items   : center;
+        }
+
+
+        .fcta-text-container {
+            padding-right: 20px;
+
+            @media @mobile {
+                text-align: center;
+            }
+
+        }
+
+        .fcta-button-container {
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-evenly;
+            padding        : 0px 20px;
+
+            a {
+
+                #fcta-sign-up {
+                    width           : 180px;
+                    height          : 40px;
+                    border-radius   : 10px;
+                    border          : none;
+                    background-color: @featureHeader;
+                    color           : @textColor;
+                    cursor          : pointer;
+                    margin          : 1em 0;
+
+                    &:hover {
+                        color: @fadedBlack;
+                    }
+                }
+            }
+
+            a {
+                #fcta-learn-more {
+                    width           : 180px;
+                    height          : 40px;
+                    border-radius   : 10px;
+                    border          : 1px solid @textColor;
+                    background-color: fade(black, 0%);
+                    color           : @textColor;
+                    ;
+                    cursor: pointer;
+                    margin: 1em 0;
+
+                    &:hover {
+                        background-color: @featureHeader;
+                        color           : @fadedBlack;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,9 @@ const sellIcons = ['fas fa-globe-americas',
     'fas fa-taxi',
     'fas fa-suitcase',
     'fas fa-cocktail',
-    'fas fa-wallet'];
+    'fas fa-wallet',
+    'fas fa-truck-monster',
+    'fas fa-gas-pump'];
 
 const sellContainers = document.querySelectorAll('.cell');
 
