@@ -1,3 +1,5 @@
 const mainBackground = document.querySelector('.main-container');
+const mainCompStyles = getComputedStyle(mainBackground);
+const bgImage = mainCompStyles.backgroundImage;
 
-TweenMax.from(mainBackground, 1, {opacity: 0});
+TweenMax.from(bgImage, 2, {opacity: 0, delay: 1});

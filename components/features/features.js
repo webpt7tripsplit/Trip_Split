@@ -47,7 +47,7 @@ const modalClose = () => {
     featureBackground.classList.toggle('background-blur');
   };
 
-  setTimeout(() => toggle(), 900);
+  setTimeout(() => toggle(), 1200);
 }
 
 addIcons();
