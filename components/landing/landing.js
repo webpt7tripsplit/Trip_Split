@@ -14,7 +14,7 @@ if (document.querySelector('title').innerText.includes('Home')) {
     window.addEventListener('scroll', () => {
         if (landing.scrollHeight - window.scrollY <= 73) {
             stickyNav.style.display = "flex";
-            TweenMax.to ('#menu-bar', 2, {opacity: 1});
+            TweenMax.to('#menu-bar', 2, { opacity: 1 });
 
         } else {
             stickyNav.style.display = 'none';

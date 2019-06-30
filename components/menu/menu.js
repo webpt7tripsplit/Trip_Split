@@ -1,29 +1,42 @@
 
 const menuToggle = () => {
   // Toggle the "menu--open" class on your menu refence. 
-  // if (menu.hasAttribute('menu--open')) {
+  if (menu.classList.contains('menu--open')) {
 
-  //   TweenMax.to('.menu', 0.4, { x: 0 });
+    TweenMax.to(menu, 0.5, { opacity: 0 });
 
-  //   menu.classList.toggle('menu--open');
+    setTimeout(() => menu.classList.toggle('menu--open'), 900);
 
-  // } else {
+    TweenMax.from(menu, .1, {opacity:1, delay:2});
 
-  menu.classList.toggle('menu--open');
+    if (document.querySelector('title').innerText.includes('Home')) {
+      mainContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Features')) {
+      featuresContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Team')) {
+      teamContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Sign Up')) {
+      signUpContainer.classList.toggle('background-blur');
+    }
 
-  if (document.querySelector('title').innerText.includes('Home')) {
-    mainContainer.classList.toggle('background-blur');
-  } else if (document.querySelector('title').innerText.includes('Features')) {
-    featuresContainer.classList.toggle('background-blur');
-  } else if (document.querySelector('title').innerText.includes('Team')) {
-    teamContainer.classList.toggle('background-blur');
-  } else if (document.querySelector('title').innerText.includes('Sign Up')) {
-    signUpContainer.classList.toggle('background-blur');
+
+  } else {
+
+    menu.classList.toggle('menu--open');
+
+    if (document.querySelector('title').innerText.includes('Home')) {
+      mainContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Features')) {
+      featuresContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Team')) {
+      teamContainer.classList.toggle('background-blur');
+    } else if (document.querySelector('title').innerText.includes('Sign Up')) {
+      signUpContainer.classList.toggle('background-blur');
+    }
+
+    TweenMax.from('.menu', 0.4, { x: 350 });
   }
-
-  TweenMax.from('.menu', 0.4, { x: 350 });
 }
-// }
 
 // Start Here: Create a reference to the ".menu" class
 const menu = document.querySelector('.menu');
