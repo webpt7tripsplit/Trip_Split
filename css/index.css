@@ -1,23 +1,3 @@
-.main-container {
-  background-color: darkgrey;
-  background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg);
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Open Sans';
-  color: #FFFCF7;
-}
-.background-blur {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  background-color: rgba(34, 36, 37, 0.85);
-  background-blend-mode: multiply;
-}
 header .feature-header {
   width: 100%;
   height: 350px;
@@ -500,6 +480,26 @@ body {
   margin: 0;
   padding: 0;
 }
+.main-container {
+  background-color: darkgrey;
+  background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg);
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans';
+  color: #FFFCF7;
+}
+.background-blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: rgba(34, 36, 37, 0.85);
+  background-blend-mode: multiply;
+}
 #menu-bar {
   position: fixed;
   width: 100vw;
@@ -735,6 +735,14 @@ body {
   color: #FFFCF7;
   text-decoration: none;
 }
+@media (max-width: 499px) {
+  .landing a {
+    width: 100%;
+  }
+}
+.landing a:hover {
+  transform: scale(1.1);
+}
 .landing a button {
   width: 400px;
   height: 70px;
@@ -750,11 +758,8 @@ body {
   border-width: 0px;
   cursor: pointer;
 }
-.landing a button:hover {
-  transform: scale(1.1);
-}
 @media (max-width: 499px) {
-  .landing a {
+  .landing a button {
     width: 100%;
     height: 70px;
     font-size: 1.6rem;
