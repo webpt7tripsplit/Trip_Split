@@ -96,6 +96,11 @@ body {
 .menu i:hover {
   color: #CFBC78;
 }
+@media (max-width: 499px) {
+  .menu i {
+    padding-left: 232px;
+  }
+}
 .menu ul {
   padding-right: 40px;
   display: flex;
@@ -139,6 +144,11 @@ body {
 #home-footer .footer-icons i {
   color: #fff;
   cursor: pointer;
+}
+@media (max-width: 499px) {
+  #home-footer .footer-icons {
+    padding: 0px 32px;
+  }
 }
 #home-footer p {
   margin: 0 0 50px 0;
