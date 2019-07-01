@@ -14,4 +14,5 @@ Github Page: (https://webpt7tripsplit.github.io/Trip_Split/index.html)
 ### Technologies:
 - Responsive Design
 - HTML / CSS(Less) / Flexbox / JavaScript
+- GreenSock Animation Platform (GSAP)
 - Font Awesome
