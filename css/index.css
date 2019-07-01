@@ -737,7 +737,7 @@ header .feature-header .icons i {
 }
 @media (max-width: 499px) {
   #sign-up-page {
-    height: 117%;
+    height: 200%;
   }
 }
 .background-blur {
