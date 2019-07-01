@@ -7,7 +7,7 @@ const menuToggle = () => {
 
     setTimeout(() => menu.classList.toggle('menu--open'), 900);
 
-    TweenMax.from(menu, .1, {opacity:1, delay:2});
+    TweenMax.from(menu, .1, { opacity: 1, delay: 2 });
 
     if (document.querySelector('title').innerText.includes('Home')) {
       mainContainer.classList.toggle('background-blur');

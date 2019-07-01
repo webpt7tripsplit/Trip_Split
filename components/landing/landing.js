@@ -22,29 +22,3 @@ if (document.querySelector('title').innerText.includes('Home')) {
     })
 }
 
-// const menuIcon = document.querySelector('i');
-
-
-// console.log(landing)
-
-// function checkHeight(e) {
-//     console.log(`Scroll position: ${window.scrollY}`);
-// }
-
-// landing.onscroll = checkHeight(landing);
-
-// const landingCompStyle = getComputedStyle(landing);
-
-// const landingHeight = landing.height;
-
-// console.log(landingHeight);
-
-// observer = new IntersectionObserver(entry => {
-//     if (entry.intersectionRatio === 0) {
-//         stickyNav.style.display = 'flex';
-//     }
-// });
-
-// observer.observe(landing);
-
-// landing.onvisibilitychange = () => {stickyNav.style.display = 'flex'};

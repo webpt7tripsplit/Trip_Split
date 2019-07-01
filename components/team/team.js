@@ -11,8 +11,8 @@ const modalClose = () => {
   setTimeout(() => toggle(), 900);
 }
 
-TweenMax.to(modal, 0.8, {opacity: 0, delay: 0.3});
+TweenMax.to(modal, 0.8, { opacity: 0, delay: 0.3 });
 
 Window.onload = modalClose();
 
-TweenMax.from(menu, .1, {opacity:1, delay:2});
+TweenMax.from(menu, .1, { opacity: 1, delay: 2 });
